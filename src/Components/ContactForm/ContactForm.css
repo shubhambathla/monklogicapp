@@ -1,0 +1,55 @@
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: auto; */
+    background-color:#ffc69a;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: p solid black; */
+    border-radius: 5px;
+    background-color: #fff;
+    margin:20px;
+    padding:30px;
+    
+}
+input[type=text], [type=email], [type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 5px 0;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  input[type=submit]{
+    padding: 10px;
+    padding-left:5%;
+    padding-right:5%;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top:2%;
+    background-color: #ffc69a;
+  }
+  @media only screen and (max-width: 768px) {
+    .contact-form{
+        width:90%;
+
+    }
+    label{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 22px;
+    }
+  }

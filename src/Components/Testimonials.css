@@ -1,0 +1,96 @@
+.testimonial-container{
+    background-image: url('../Asset/Dot-grid-why-us.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+.testimonial-subcontainer{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.testimonial-subcontainer h2{
+    color:#FFC1AE;
+}
+.testimonial-subcontainer h1{
+    font-size: 45px;
+    font-family: 'Gruppo', sans-serif;
+    line-height: 3.5rem;
+}
+.testimonial-subcontainer p{
+    font-size: 25px;
+}
+/* .testimonial-subcontainer div:nth-child(){
+    width:60%;
+} */
+.testimonial-subcontainer div:nth-child(2){
+    background-color: #FFC1AE;
+    border-radius: 15px;
+}
+.testimonial-subcontainer-left{
+    width:70%;
+    text-justify:inner-word;
+}
+.testimonial-subcontainer-right{
+   display: flex;
+   align-items: center;
+   width: 60%;
+   padding-left: 10px;
+    
+}
+.testimonial-subcontainer-right p{
+    
+    text-justify:inner-word;
+    vertical-align: middle;
+    font-size: 2rem;
+
+}
+.testimonial-subcontainer-right::before{
+
+    content:url('../Asset/double-quotes.png');;
+    background-repeat: no-repeat;
+    /* border-radius: 50px; */
+    /* background-color: #FFC1AE; */
+    position: absolute;
+    z-index: 10;
+    margin-top: -15rem;
+    margin-left:-20px;
+
+
+}
+@media only screen and (max-width: 768px) {
+    .testimonial-subcontainer{
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial-subcontainer h1{
+        font-size: 28px;
+        line-height: 2.1rem;
+    }
+    .testimonial-subcontainer p{
+        font-size: 23px;
+    }
+    .testimonial-subcontainer-right{
+        padding: 10px;
+        width:75%;
+    }
+    .testimonial-subcontainer-right::before{
+        /* background-size: 50px 50px;
+        width:50px;
+        height: 50px; */
+        transform: scale(.4);
+        margin-top: -5rem;
+
+        margin-left:-6.6rem;
+    
+    
+    }
+
+
+}

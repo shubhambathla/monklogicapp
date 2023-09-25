@@ -1,0 +1,15 @@
+.stripe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC1AE;
+    
+}
+.stripe-contacts{
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    .stripe{
+        display: none;
+    }
+}

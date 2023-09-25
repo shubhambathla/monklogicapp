@@ -1,0 +1,111 @@
+.whyus-container{
+    background-image: url('../Asset/Dot-grid-why-us.png');
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    /* background-repeat:no-repeat; */
+    justify-content: center;
+    align-items: center;
+}
+.whyus-subcontainer{
+    display: flex;
+    align-items: center;
+    width:60%;
+    padding-top:3%;
+}
+.whyus-subcontainer h2,span{
+    color:#FFC1AE;
+}
+.whyus-subcontainer h1{
+    font-size: 45px;
+    font-family: 'Gruppo', sans-serif;
+    line-height: 3.5rem;
+}
+.whyus-subcontainer p{
+    font-size: 25px;
+}
+#request-a-qoute{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: transparent;
+    /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
+    box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.3); 
+    transition: all 0.5s ease;
+}
+#request-a-qoute:hover{
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5); 
+    transform: translateY(-4px);
+    background-color: #fff;
+}
+.whyus-container div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 15px;
+    align-items: center;
+
+}
+.whyus-container div:nth-child(2) button{
+    margin-top: 1.5rem;
+}
+
+.xstack-top::before{
+    content:'';
+    width: 300px;
+    height:200px;
+    border-radius: 15px;
+    background-color: #FFC1AE;
+    position: absolute;
+    z-index: -10;
+    margin-right:-250px;
+    margin-top: -20px;
+}
+.xstack-top::after{
+    content:'';
+    width: 300px;
+    height:200px;
+    border-radius: 15px;
+    background-color: #f3e9e9;
+    position: absolute;
+    z-index: -11;
+    margin-right:250px;
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .whyus-subcontainer{
+        flex-direction: column;
+        width:80%
+    }
+    .whyus-subcontainer h1{
+        font-size: 28px;
+        line-height: 2.1rem;
+    }
+    .xstack-top img{
+        width:100%;
+    }
+    .xstack-top::before{
+        width:100px;
+    }
+    .whyus-subcontainer p{
+        font-size: 23px;
+    }
+    .stack-down-text{
+        width:120%;
+    }
+}
+@media only screen and (max-width: 330px){
+    .xstack-top::before{
+        width:90px;
+        margin-left:-70px ;
+    }
+    .xstack-top::after{
+        width:80px;
+    }
+    .xstack-top img{
+        width:140%;
+    }
+}

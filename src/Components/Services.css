@@ -1,0 +1,78 @@
+.services-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.services-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 70px;
+    font-family: 'Gruppo', sans-serif;
+    background-image: url('../Asset/Dot-grid-why-us.png');
+    /* background-repeat: no-repeat; */
+    /* background-size:30rem; */
+    width:370px;
+    margin-right:-150px;
+}
+
+.services-tile-row{
+    display: flex;
+}
+.services-tile{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+    width:18rem;
+    background-color: #FFC1AE;
+    padding: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin:10px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
+    transition: all 0.5s ease;
+}
+.services-tile:hover{
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.5); 
+    transform: translateY(-5px);
+}
+.services-text-mobile{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .services-text-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 70px;
+        font-family: 'Gruppo', sans-serif;
+        background-image: url('../Asset/Dot-grid-why-us.png');
+        width:100%;
+        margin-right:-150px;
+    }
+    .services-container{
+        flex-direction: column;
+    }    
+    .services-tile-row{
+        flex-direction: column;
+    }
+    .services-text{
+        width: 100%;
+    }
+    .services-tile{
+        width: 100%;
+        margin:1px;
+    }
+    .tile1{
+        background-color: #FFC1AE;
+    }
+    .tile2{
+        background-color: #f4d3c8;
+    }
+    .services-text{
+        display: none;
+    }
+}

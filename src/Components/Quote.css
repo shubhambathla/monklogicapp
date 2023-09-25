@@ -1,0 +1,24 @@
+#quote{
+    background-image: url('../Asset/lets-connect.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 1%;
+    padding-bottom: 1%; */
+}
+button{
+    padding:15px;
+    /* margin-top:1%; */
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    #quote h1{
+        font-size: 24px;
+        padding: 10px;
+    }
+    #quote{
+        text-align: center;
+    }
+}

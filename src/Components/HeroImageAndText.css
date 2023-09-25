@@ -1,0 +1,43 @@
+.hero-Image-and-Text-container{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-Image-and-Text{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    width:70%;
+    align-items: center;
+}
+.hero-Text{
+    width:50%;
+}
+.hero-Text h1{
+    font-size: 90px;
+    margin-bottom: 4%;
+}
+.hero-Text p{
+    font-size: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .hero-Text h1{
+        font-size: 22px;
+        font-family: 'Gruppo', sans-serif;
+    }
+    .hero-Text p{
+        display: none;
+    }
+    .hero-Image-and-Text{
+        flex-direction: column-reverse;
+    }
+    .hero-Text{
+        width:100%;
+        display: flex;
+        justify-content: center;
+       
+    }
+    .hero-Image-and-Text-container{
+        margin-top: 60px;
+    }
+}
